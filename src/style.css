@@ -1,0 +1,185 @@
+/*** Fonts ***/
+
+@font-face {
+    font-family: 'Ubuntu Regular';
+    src: url('/fonts/Ubuntu-Regular.eot');
+    src: local('Ubuntu Regular'), local('Ubuntu-Regular'),
+        url('/fonts/Ubuntu-Regular.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/Ubuntu-Regular.woff2') format('woff2'),
+        url('/fonts/Ubuntu-Regular.woff') format('woff'),
+        url('/fonts/Ubuntu-Regular.ttf') format('truetype'),
+        url('/fonts/Ubuntu-Regular.svg#Ubuntu-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Ubuntu Light';
+    src: url('/fonts/Ubuntu-Light.eot');
+    src: local('Ubuntu Light'), local('Ubuntu-Light'),
+        url('/fonts/Ubuntu-Light.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/Ubuntu-Light.woff2') format('woff2'),
+        url('/fonts/Ubuntu-Light.woff') format('woff'),
+        url('/fonts/Ubuntu-Light.ttf') format('truetype'),
+        url('/fonts/Ubuntu-Light.svg#Ubuntu-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Ubuntu MedItalic';
+    src: url('/src/fonts/Ubuntu-MediumItalic.eot');
+    src: local('Ubuntu Medium Italic'), local('Ubuntu-MediumItalic'),
+        url('/fonts/Ubuntu-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/Ubuntu-MediumItalic.woff2') format('woff2'),
+        url('/fonts/Ubuntu-MediumItalic.woff') format('woff'),
+        url('/fonts/Ubuntu-MediumItalic.ttf') format('truetype'),
+        url('/fonts/Ubuntu-MediumItalic.svg#Ubuntu-MediumItalic') format('svg');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lemonada';
+    src: url('/fonts/Lemonada-Regular.eot');
+    src: local('Lemonada Regular'), local('Lemonada-Regular'),
+        url('/fonts/Lemonada-Regular.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/Lemonada-Regular.woff2') format('woff2'),
+        url('/fonts/Lemonada-Regular.woff') format('woff'),
+        url('/fonts/Lemonada-Regular.ttf') format('truetype'),
+        url('/fonts/Lemonada-Regular.svg#Lemonada-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+ 
+/*** Variables ***/
+
+:root {
+
+    --ff-primary-regular: "Ubuntu Regular", "sans serif";
+    --ff-primary-light: "Ubuntu Light", "sans serif";
+    --ff-primary-meditalic: "Ubuntu MedItalic", "sans serif";
+    --ff-deco: "Lemonada", "sans serif";
+
+/** Main Color: Blue **/
+    --clr-primary: hsl(185,62%,45%);
+
+/** Secondary blues: ordered from dark to lightest **/
+    --clr-secondary-1: hsl(184,91%,17%);
+    --clr-secondary-2: hsl(185,84%,25%);
+    --clr-secondary-3: hsl(185,81%,29%);
+    --clr-secondary-4: hsl(184,77%,34%);
+    --clr-secondary-5: hsl(185,57%,50%);
+    --clr-secondary-6: hsl(184,65%,59%);
+    --clr-secondary-7: hsl(184,80%,74%);
+    --clr-secondary-8: hsl(185,94%,87%);
+    --clr-secondary-9: hsl(186,100%,94%);
+    
+/** Greys: ordered from dark to lightest**/
+    /**For Headings**/
+    --clr-grey-1: hsl(209,61%,16%);
+    --clr-grey-2: hsl(211,39%,23%);
+    --clr-grey-3: hsl(209,34%,30%);
+    --clr-grey-4: hsl(209,28%,39%);
+    
+    /**For Paragraphs**/
+    --clr-grey-5: hsl(210,22%,49%);
+    --clr-grey-6: hsl(209,23%,60%);
+    --clr-grey-7: hsl(211,27%,70%);
+    --clr-grey-8: hsl(210,31%,80%);
+    --clr-grey-9: hsl(212,33%,89%);
+    
+/** Utility **/
+    --clr-white: #fff;
+    --transition: all 0.3 linear;
+    --spacing: 0.25rem;
+    --radius: 0.5rem;
+    --light-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    --dark-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/*** global styles ***/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--ff-primary);
+    background: var(--clr-white);
+    color: var(--clr-grey-1);
+    line-height: 1.5;
+    font-size: 0.875rem; /*14pt*/
+}
+a {
+    text-decoration: none;
+}
+img {
+    width: 100%;
+    display: block;
+}
+ul {
+    list-style-type: none;
+}
+p {
+    margin-bottom: 1.25rem;
+}
+h1, h1, h3, h4 {
+    letter-spacing: var(--spacing);
+    text-transform: capitalize;
+    line-height: 1.25;
+    margin-bottom: 0.75rem;
+}
+h1 {font-size: 3rem;}
+h2 {font-size: 2rem;}
+h3 {font-size: 1.25rem;}
+h4 {font-size: 0.875rem;}
+
+@media screen and (min-width: 800px) {
+    h1, h1, h3, h4 {
+        line-height: 1;
+    }
+    h1 {font-size: 3rem;}
+    h2 {font-size: 2rem;}
+    h3 {font-size: 1.25rem;}
+    h4 {font-size: 0.875rem;)
+}
+.btn{
+    texttransform: uppercase;
+    background: var(--clr-primary);
+    color: var(--clr-white);
+    padding: 0.375rem 0.75rem;
+    letter-spacing: var(--spacing);
+    display: inline-block;
+    /*font-weight: 700;*/
+    font-size: 0.875rem;
+    border: 2px solid transparent;
+    cursor: pointer; 
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+    transition: var(--transition); 
+}
+.btn:hover {
+    color: var(--clr-secondary-1);
+    background: var(--clr-secondary-8);
+}
+.img-temp-size-large {max-width: 600px;}
+
+.icon {
+    font-family: 'coffee icons';
+    font-weight: normal;
+    font-style: normal;
+}
+
+/** HERO SECTION **/
+.hero {
+    min-height: 100vh;
+    background: var(--clr-primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
