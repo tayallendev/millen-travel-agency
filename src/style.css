@@ -337,7 +337,38 @@ h4 {font-size: 0.875rem;}
 
 
 /** FEATURED TOURS SECTION **/
-
+.featured article {
+    transition: var(--transition);
+    background: var(--clr-grey-10);
+    box-shadow: var(--light-shadow);
+    margin-bottom: 2rem;
+}
+.featured article:hover {
+    box-shadow: var(--dark-shadow);
+    transform: scale(1.02);
+}
+.card-upper {
+    position: relative;
+}
+.card-upper img {
+    height: 15rem;
+    object-fit: cover;
+}
+.card-upper span {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background: var(--clr-secondary-6);
+    color: var(--clr-secondary-1);
+    padding: 0.25rem 0.5rem;
+    margin-bottom: 0;
+}
+.card-lower {
+    padding: 1rem 0.5rem;
+}
+.car-footer {
+    
+}
 /** CONTACT SECTION **/
 .contact {
     background: var(--clr-primary);
