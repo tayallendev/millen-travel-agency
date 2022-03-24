@@ -178,6 +178,7 @@ h4 {font-size: 0.875rem;}
     font-style: normal;
 }
 
+
 /** HERO SECTION **/
 .hero {
     min-height: 100vh;
@@ -229,6 +230,7 @@ h4 {font-size: 0.875rem;}
     }
 }
 
+
 /** LAYOUT **/
 .layout-centered {
     width: 90vw;
@@ -240,6 +242,7 @@ h4 {font-size: 0.875rem;}
     justify-content: space-between;
     flex-wrap: wrap;
 }
+
 
 /** ABOUT SECTION **/
 .about {
@@ -284,14 +287,16 @@ h4 {font-size: 0.875rem;}
         left: 1.5rem;
     }
 }
+
+
 /** SERVICES SECTION **/
 .services {
     background: var(--clr-grey-10);
     padding: 2rem 0;
-    text-align: center;
+    text-align: center; 
 }
 .services article {
-    margin-bottom: 1rem;
+    margin: 1rem auto;
 }
 .services h2 {
     margin-bottom: 4rem;
@@ -308,20 +313,15 @@ h4 {font-size: 0.875rem;}
     max-width: 20rem;
     margin: 0.75rem auto;
 }
-
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 760px) {
     .services article {
         flex: 0 0 calc(50% - 1rem);
     }
 }
 @media screen and (min-width: 992px) {
     .services article {
-        flex: 0 0 calc(33.333% - 1rem);
-    }
-}
-@media screen and (min-width: 992px) {
-    .services article {
         display: flex;
+        flex: 0 0 calc(33.333% - 1rem);
         text-align: left;
     }
     .services span {
@@ -329,19 +329,26 @@ h4 {font-size: 0.875rem;}
     }
     .services-info {
         padding-left: 1rem;
-    }
-    .services p {
         margin-top: 0.25rem;
     }
 }
 
 
 /** FEATURED TOURS SECTION **/
+.featured {
+    padding: 1.5rem 0;
+}
+.featured h2 {
+    margin: 2.5rem auto;
+    text-align: center;
+    text-transform: uppercase;
+}
 .featured article {
     transition: var(--transition);
     background: var(--clr-grey-10);
     box-shadow: var(--light-shadow);
     margin-bottom: 2rem;
+    position: relative;
 }
 .featured article:hover {
     box-shadow: var(--dark-shadow);
@@ -362,15 +369,98 @@ h4 {font-size: 0.875rem;}
     color: var(--clr-secondary-1);
     padding: 0.25rem 0.5rem;
     margin-bottom: 0;
+    text-transform: capitalize;
 }
-.card-lower {
-    padding: 1rem 0.5rem;
+.card-lower,
+.card-footer {
+    padding: 1.25rem 1.5rem;
 }
-.car-footer {
-    
+.card-lower h3 {
+    height: 3.5rem;
+    margin-bottom: 2rem;
 }
+.card-lower p {
+    height: 3.5rem;
+}
+.card-footer .layout-flex-columns {
+    align-items: center;
+}
+.card-footer p {
+    line-height: 0;
+    margin-bottom: 0;
+    text-transform: capitalize;
+    color: var(--clr-primary);
+    max-height: 1rem;
+}
+.card-footer span {
+    padding-right: 0.5rem;
+}
+.featured a {
+    text-align: center;
+    margin: 1.5rem auto;
+}
+
+@media screen and (min-width: 760px) {
+    .featured article {
+        flex: 0 0 calc(50% - 1rem);
+    }
+}
+@media screen and (min-width: 1170px) {
+
+    .featured article {
+        flex: 0 0 calc(33.333% - 1rem);
+    }
+}
+
+
 /** CONTACT SECTION **/
 .contact {
     background: var(--clr-primary);
+    padding: 2rem 1rem;
 }
 
+
+/** GALLERY SECTION **/
+.gallery article {
+    position: relative;
+    background: var(--clr-primary);
+}
+.gallery span {
+    font-size: 3rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--clr-white);
+    opacity: 0;
+    cursor: pointer;
+    transition: var(--transition);
+}
+.gallery img {
+    transition: var(--transition);
+    object-fit: cover;
+}
+.gallery article:hover img {
+    opacity: 0.3;
+}
+.gallery article:hover span {
+    opacity: 1;
+}
+@media screen and (min-width: 576px) {
+    .gallery .layout-flex-columns {
+        display: flex;
+        flex: wrap;
+    }
+    .gallery article {
+        flex: 0 0 50%;
+    }
+}
+@media screen and (min-width: 992px) {
+    .gallery article {
+        flex: 0 0 25%;
+    }
+}
+.footer {
+    background: var(--clr-secondary-1);
+    margin-bottom: 0;
+}
