@@ -608,14 +608,9 @@ h4 {font-size: 0.875rem;}
 }
 .newsletter-form {
     max-width: 28rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    
 }
 .newsletter-input {
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 auto;
-            flex: 1 1 auto;
     color: var(--clr-grey-5);
 }
 .newsletter-input,
@@ -651,6 +646,9 @@ h4 {font-size: 0.875rem;}
 }
 @media screen and (min-width: 576px) {
     .newsletter-form {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
         -ms-flex-item-align: start;
             align-self: flex-start;
         -webkit-box-flex: 1;
