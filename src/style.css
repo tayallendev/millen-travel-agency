@@ -178,6 +178,67 @@ h4 {font-size: 0.875rem;}
     font-style: normal;
 }
 
+/** NAVIGATION **/
+.navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--clr-white);
+    box-shadow: var(--dark-shadow);
+    z-index: 2;
+}
+.navigation .layout-centered {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+.navigation .logo {
+    color: var(--clr-primary);
+}
+.navigation-mobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+.navigation-mobile button {
+    background: transparent;
+    color: var(--clr-primary);
+    padding: 0;
+    margin: 0;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: var(--transition);
+}
+.navigation-mobile button:hover {
+    transform: scale(1.3);
+}
+.navigation-links a {
+    display: block;
+    padding: 1rem 2rem;
+    text-transform: capitalize;
+    letter-spacing: var(--spacing);
+    font-size: 1rem;
+    cursor: pointer;
+    transition: var(--transition);
+    color: var(--clr-grey-1);
+}
+.navigation-links a:hover {
+    color: var(--clr-secondary-1);
+    background: var(--clr-secondary-8);
+    padding-left: 2.25rem;
+}
+.navigation-links {
+    height: 0;
+    overflow: hidden;
+}
+
+.show-links {
+    height: 280px;
+}
+.navigation .socials {
+    display: none;
+}
 
 /** HERO SECTION **/
 .hero {

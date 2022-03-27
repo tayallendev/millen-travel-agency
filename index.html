@@ -39,9 +39,20 @@
     <header id="home">
       <!-- Navigation -->
       <nav id="navigation" class="navigation">
-        <div class="layout-centered flex-layout-navigation">
-          <span class="site-logo"><b>Millen</b> Travel Agency</span>
-          <ul class="scroll-links">
+        <div class="layout-centered">
+          <div class="navigation-mobile">
+            <h3 class="logo">
+              <span>Millen</span> Travel Agency
+            </h3>
+            <button 
+            type="button" 
+            id="navigation-toggle" 
+            class="navigation-toggle">
+               <span class="fas fa-bars"></span>
+            </button>
+          </div>
+          
+          <ul id="navigation-links" class="navigation-links">
             <li>
               <a href="#home">home</a>
             </li>
@@ -100,8 +111,8 @@
         <div class="hero-banner">
           <h1>Explore The World With Us</h1>
           <p>
-            <span>The Millen Travel Agency</span>
-            the vivamus aliquet neque ac libero mollis malesuada.
+            <span>Millen Travel Agency</span>
+            is the vivamus aliquet neque ac libero mollis malesuada.
           </p>
           <a href="#featured" class="btn btn-hero scroll-link">Browse Tours</a>
         </div>
@@ -386,12 +397,15 @@
           <h3>Want latest tour info and updates?</h3>
           <p>Signup for our mailing list for news about upcoming tours!</p>
         </article>
-        <form class="newsletter-form">
-          <input class="newsletter-input" action="https://formspree.io/f/xnqwzywd" method="POST" 
-          type="email" name="email" placeholder="email@emailservice.com"
+        <form class="newsletter-form"
+         action="https://formspree.io/f/xdoblooe" 
+         method="POST">
+          <input class="newsletter-input" 
+          type="email" name="email" 
+          placeholder="email@emailservice.com"
           />
 
-          <input class="newsletter-submit" type="submit" value="Subscribe"></input>
+          <input class="newsletter-submit" type="submit" value="Subscribe!"></input>
         </form>
       </div>
     </section>
@@ -498,5 +512,6 @@
         </ul>
       </div>
     </footer>
+    <script src="/src/script.js"></script>
   </body>
 </html>
