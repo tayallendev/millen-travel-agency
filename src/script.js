@@ -10,3 +10,7 @@ const links = document.getElementById("navigation-links");
 linksToggle.onclick = function() {
     links.classList.toggle("show-links");
 }
+
+/*** Smooth Scroll ***/
+
+const scrollLinks = document.querySelectorAll("scroll-to");
