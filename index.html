@@ -224,6 +224,7 @@
               <img
                 src="/src/images/kumbhalgarh-fort-india.jpg"
                 alt="Image of the Great wall of India in Aravalli Hills, India"
+                loading="lazy"
               />
               <span>may 14, 2023</span>
             </div>
@@ -251,6 +252,7 @@
               <img
                 src="/src/images/madinat-jumeirah-dubai.jpg"
                 alt="Image of madinat jumeirah hotel in Dubai"
+                loading="lazy"
               />
               <span>may 23, 2023</span>
             </div>
@@ -278,6 +280,7 @@
               <img
                 src="/src/images/village-bay-assos.jpg"
                 alt="Image of a village in Assos Greece"
+                loading="lazy"
               />
               <span>June 7, 2023</span>
             </div>
@@ -305,6 +308,7 @@
               <img
                 src="/src/images/water-palace-tirta-gangga-bali.jpg"
                 alt="Image of the water garden of tirta gangga of bali"
+                loading="lazy"
               />
               <span>July 12, 2023</span>
             </div>
@@ -332,6 +336,7 @@
               <img
                 src="/src/images/giraffe-kilimanjaro.jpg"
                 alt="Images of Giraffes with Mount Kilimanjaro in the background"
+                loading="lazy"
               />
               <span>august 18, 2023</span>
             </div>
@@ -359,6 +364,7 @@
               <img
                 src="/src/images/village-hallstatt-austria.jpg"
                 alt="Image of village in Hallstatt Austria"
+                loading="lazy"
               />
               <span>September 8, 2023</span>
             </div>
@@ -393,16 +399,19 @@
         <article>
           <h3>Want latest tour info and updates?</h3>
           <p>Signup for our mailing list for news about upcoming tours!</p>
+          <p></p>
         </article>
         <form class="newsletter-form"
          action="https://formspree.io/f/xdoblooe" 
          method="POST">
-          <input class="newsletter-input" 
-          type="email" name="email" 
-          placeholder="email@emailservice.com"
-          />
+          <label>
+            <input class="newsletter-input"
+            type="email" name="email"
+            placeholder="email@emailservice.com"
+            />
+          </label>
 
-          <input class="newsletter-submit" type="submit" value="Subscribe!"></input>
+          <input class="newsletter-submit" type="submit" value="Subscribe!" />
         </form>
       </div>
     </section>
@@ -411,49 +420,49 @@
     <section id="gallery" class="gallery">
       <div class="layout-flex-columns">
         <article>
-          <img src="/src/images/church-ethiopa.jpg" alt="" />
+          <img src="/src/images/church-ethiopa.jpg" alt="" loading="lazy" />
           <a href="#">
             <span class="fas fa-magnifying-glass"></span>
           </a>
         </article>
         <article>
-          <img src="/src/images/torres-del-paine-chile.jpg" alt="" />
+          <img src="/src/images/torres-del-paine-chile.jpg" alt="" loading="lazy" />
           <a href="#">
             <span class="fas fa-magnifying-glass"></span>
           </a>
         </article>
         <article>
-          <img src="/src/images/prambanan-temple-indonesia.jpg" alt="" />
+          <img src="/src/images/prambanan-temple-indonesia.jpg" alt="" loading="lazy" />
           <a href="#">
             <span class="fas fa-magnifying-glass"></span>
           </a>
         </article>
         <article>
-          <img src="/src/images/street-havana-cuba.jpg" alt="" />
+          <img src="/src/images/street-havana-cuba.jpg" alt="" loading="lazy" />
           <a href="#">
             <span class="fas fa-magnifying-glass"></span>
           </a>
         </article>
         <article>
-          <img src="/src/images/rainforest-costa-rica.jpg" alt="" />
+          <img src="/src/images/rainforest-costa-rica.jpg" alt="" loading="lazy" />
           <a href="#">
             <span class="fas fa-magnifying-glass"></span>
           </a>
         </article>
         <article>
-          <img src="/src/images/village-les-baux-de-provence.jpg" alt="" />
+          <img src="/src/images/village-les-baux-de-provence.jpg" alt="" loading="lazy" />
           <a href="#">
             <span class="fas fa-magnifying-glass"></span>
           </a>
         </article>
         <article>
-          <img src="/src/images/street-brussels.jpg" alt="" />
+          <img src="/src/images/street-brussels.jpg" alt="" loading="lazy"/>
           <a href="#">
             <span class="fas fa-magnifying-glass"></span>
           </a>
         </article>
         <article>
-          <img src="/src/images/waterfall-in-taiwan.jpg" alt="" />
+          <img src="/src/images/waterfall-in-taiwan.jpg" alt="" loading="lazy" />
           <a href="#">
             <span class="fas fa-magnifying-glass"></span>
           </a>
@@ -500,7 +509,6 @@
             </a>
           </li>
         </ul>
-      </div>
     </footer>
     <script src="/src/script.js"></script>
   </body>
