@@ -628,7 +628,7 @@ h4 {font-size: 0.875rem;}
     color: inherit;
 }
 .newsletter-submit {
-    font-family: (--ff-primary);
+    font-family: var(--ff-primary);
     margin-left: 0.5rem;
     padding-left: 1rem;
     padding-right: 1rem;
