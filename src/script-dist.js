@@ -1,0 +1,1 @@
+const linksToggle=document.getElementById("navigation-toggle"),links=document.getElementById("navigation-links");linksToggle.onclick=function(){links.classList.toggle("show-links")};const scrollLinks=document.querySelectorAll("scroll-to");
